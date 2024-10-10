@@ -5,10 +5,8 @@ const FeedbackForm = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
-    company: '',
     email: '',
     phoneNumber: '',
-    country: 'US',
     message: '',
     agreeToPolicies: false,
   });
@@ -21,10 +19,10 @@ const FeedbackForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:5000/submit-feedback', { // Replace 'xxxxx' with your actual fabform ID
+    await fetch('http://localhost:5000/api/submit-feedback', { // Replace 'xxxxx' with your actual fabform ID
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
