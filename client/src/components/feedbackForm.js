@@ -91,7 +91,7 @@ const FeedbackForm = () => {
             <div className="flex h-6 items-center">
               <input type="checkbox" name="agreeToPolicies" id="agreeToPolicies" checked={formData.agreeToPolicies} onChange={handleChange} className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" />
               <label htmlFor="agreeToPolicies" className="ml-2 block text-sm leading-6 text-gray-600">
-                By selecting this, you agree to our <a href="#" className="font-semibold text-indigo-600">privacy policy</a>.
+                By selecting this, you agree to our <a href="https://ranj8521kumar.github.io/Portfolio/" className="font-semibold text-indigo-600">privacy policy</a>.
               </label>
             </div>
           </div>
